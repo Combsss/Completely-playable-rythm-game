@@ -1,0 +1,30 @@
+Make ssh: ssh-keygen -t ed25519 -C "combinatrocics@gmail.com"
+
+Add ssh key: 
+eval "$(ssh-agent -s)" 
+ssh-add ~/.ssh/id_ed25519
+
+
+Scenario 1: existing repository
+
+Make local copy of repository on Github: git clone (insert ssh link)
+
+When working on project:
+1- git pull (get newest version of project)
+1.5 - git checkout (desired branch name)
+2- do stuff
+3- git add (filename of file that changed)
+4- git commit -m "Commit mesage"
+5- git push
+
+
+Scneraio 2: Pushing local directory to github
+
+Set up
+1. move to directory
+2. git init
+3. git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME.git
+4. git push --set-upstream origin main
+
+Working is the same as 1.
+
