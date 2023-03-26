@@ -23,7 +23,8 @@ Scneraio 2: Pushing local directory to github
 Set up
 1. move to directory
 2. git init
-3. git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME.git
+3. git remote add origin git@github.com:Combsss/REPOSITORYNAME.git (If u need to switch remote, do git remote set-url origin (new link)
+3.5 Commit something, then check if branch exists
 4. git push --set-upstream origin main
 
 Working is the same as 1.
